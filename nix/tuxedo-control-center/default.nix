@@ -76,7 +76,7 @@ stdenv.mkDerivation rec {
     udev
 
     # For node-gyp
-    python3
+    python39
   ];
 
   # These are installed in the right place via copyDesktopItems.
