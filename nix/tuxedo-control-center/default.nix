@@ -1,5 +1,5 @@
 { pkgs, lib, stdenv, copyDesktopItems
-, python39, udev
+, python3, udev
 , makeWrapper, nodejs-14_x, electron_13, fetchFromGitHub
 }:
 
@@ -76,7 +76,7 @@ stdenv.mkDerivation rec {
     udev
 
     # For node-gyp
-    python39
+    python3
   ];
 
   # These are installed in the right place via copyDesktopItems.
