@@ -1,5 +1,5 @@
 { pkgs, lib, stdenv, copyDesktopItems
-, python3, udev
+, python39, udev
 , makeWrapper, nodejs-14_x, electron_13, fetchFromGitHub
 }:
 
