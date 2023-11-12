@@ -186,7 +186,7 @@ stdenv.mkDerivation rec {
     description = "Fan and power management GUI for Tuxedo laptops";
     homepage = "https://github.com/tuxedocomputers/tuxedo-control-center/";
     license = licenses.gpl3Plus;
-    maintainers = [ maintainers.blitz ];
+    maintainers = [ maintainers.Svenum ];
     platforms = [ "x86_64-linux" ];
   };
 }
