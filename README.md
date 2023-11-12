@@ -1,6 +1,6 @@
 # Tuxedo Control Center for NixOS
 
-[![Build](https://github.com/blitz/tuxedo-nixos/actions/workflows/build.yml/badge.svg)](https://github.com/blitz/tuxedo-nixos/actions/workflows/build.yml)
+[![Build](https://github.com/Svenum/tuxedo-nixos/actions/workflows/build.yml/badge.svg)](https://github.com/Svenum/tuxedo-nixos/actions/workflows/build.yml)
 
 ## Overview
 
@@ -27,7 +27,7 @@ to your `/etc/nixos/configuration.nix`.
 ```nix
 { config, pkgs, ... }:
 let
-  tuxedo = import (builtins.fetchTarball "https://github.com/blitz/tuxedo-nixos/archive/master.tar.gz");
+  tuxedo = import (builtins.fetchTarball "https://github.com/Svenum/tuxedo-nixos/archive/master.tar.gz");
 in {
 
  # ...
@@ -51,12 +51,12 @@ First enable the module in your `flake.nix`:
 ```nix
 {
   inputs = {
-	nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
+	nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
 
 	# ...
 
 	tuxedo-nixos = {
-	  url = "github:blitz/tuxedo-nixos";
+	  url = "github:Svenum/tuxedo-nixos";
 
 	  # Avoid pulling in the nixpkgs that we pin in the tuxedo-nixos repo.
 	  # This should give the least surprises and saves on disk space.
